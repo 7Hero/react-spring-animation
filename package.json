@@ -1,17 +1,29 @@
 {
   "name": "react-spring-animation",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.12",
+  "type": "module",
+  "description": "Simple React spring animations.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
   "author": "Popescu Vasile",
   "license": "ISC",
-  "dependencies": {
-    "react": "^18.2.0"
-  },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "rollup": "^3.20.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.5.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
     "@types/react": "^18.0.28"
   }
 }

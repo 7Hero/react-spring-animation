@@ -3,8 +3,8 @@ export class EventEmitter {
 
   constructor(){}
 
-  on(event: string, callback: Function){
-    this.events.set(event, callback);
+  on(event: string, callback: Function): void{
+    this.events.set(event, callback)
   }
 
   emit(event: string, ...args: any[]){

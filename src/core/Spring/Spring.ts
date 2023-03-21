@@ -1,4 +1,5 @@
-import { EventEmitter } from '@/core/EventEmitter';
+import { EventEmitter } from "@events/EventEmitter";
+
 
 type SpringConfig = {
   stiffness?: number;
