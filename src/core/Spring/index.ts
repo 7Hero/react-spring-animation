@@ -55,11 +55,11 @@ export class Spring extends EventEmitter {
     }
   }
 
-  get value() {
+  public get value() {
     return this._value
   }
 
-  set value(value: number) {
+  public set value(value: number) {
     this._end = value;
     this.start();
   }

@@ -1,6 +1,6 @@
 {
   "name": "react-spring-animation",
-  "version": "0.0.3",
+  "version": "0.0.31",
   "type": "module",
   "types": "dist/index.d.ts",
   "description": "Simple React spring animations.",
