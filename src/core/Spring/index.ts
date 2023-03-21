@@ -1,6 +1,5 @@
 import { EventEmitter } from "../../events/EventEmitter";
 
-
 type SpringConfig = {
   stiffness?: number;
   damping?: number;
@@ -35,15 +34,13 @@ export class Spring extends EventEmitter {
     // start spring animation
     this.start();
   }
+  
   private _update()  {
-    // F = -kx # force equals negative spring constant times new position
-    const force = -this.stiffness * (this._value - this._end); // (this._value - this.end) is the displacement from the equilibrium position, every frame we get closer to it.
-    // F = ma # force equals mass times acceleration
+    const force = -this.stiffness * (this._value - this._end);
     const damping = -this.damping * this.velocity;
     this.acceleration = (force + damping) / this.mass;
     this.velocity += this.acceleration * 0.016;
     this._value += this.velocity * 0.016;
-    // emit the updated value.
     this.emit('update', this._value);
 
     if (Math.abs(this.velocity) < 0.5 && Math.abs(this.value - this._end) < 0.5) {
@@ -59,7 +56,7 @@ export class Spring extends EventEmitter {
     return this._value
   }
 
-  public set value(value: number) {
+  set(value: number) {
     this._end = value;
     this.start();
   }
