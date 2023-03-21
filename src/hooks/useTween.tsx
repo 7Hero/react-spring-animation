@@ -1,4 +1,4 @@
-import { Tween } from "@/core/Tween"
+import { Tween } from "../core/Tween"
 import { useEffect, useRef, useState } from "react";
 
 export default function useTween(start: number, end: number, duration: number) {

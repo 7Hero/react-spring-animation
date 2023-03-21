@@ -13,9 +13,5 @@
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
     "declarationDir": "dts",
-    "paths": {
-      "@/*": ["./src/*"],
-      "@events/*":["./src/events/*"],
-    }
   }
 }

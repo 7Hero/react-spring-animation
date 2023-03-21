@@ -4,6 +4,7 @@ import typescript from '@rollup/plugin-typescript';
 import terser from '@rollup/plugin-terser';
 import external from 'rollup-plugin-peer-deps-external';
 import dts from 'rollup-plugin-dts';
+import { typescriptPaths } from 'rollup-plugin-typescript-paths';
 
 const config = [
     {

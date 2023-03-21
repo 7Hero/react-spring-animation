@@ -1,4 +1,4 @@
-import { EventEmitter } from "@events/EventEmitter";
+import { EventEmitter } from "../../events/EventEmitter";
 
 type Interpolator = (progress: number) => number;
 
