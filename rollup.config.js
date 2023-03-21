@@ -8,13 +8,13 @@ export default {
     input: 'src/main.ts',
     output: [
         {
-            file: "./dist/react-spring-animation.js",
+            file: `./dist/cjs/index.js`,
             format: 'cjs',
             sourcemap: true,
             name: 'react-spring-motion'
         },
         {
-            file: "./dist/react-spring-animation.js",
+            file: `./dist/esm/index.js`,
             format: 'esm',
             sourcemap: true
         }
